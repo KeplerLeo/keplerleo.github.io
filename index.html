@@ -1,45 +1,144 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/style.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leonardo Kepler</title>
-</head>
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-<body>
-  <header>
-    <nav>
-      <a href="#nome">Nome</a>
-      <a href="#localizacao">Localização</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
-  <h1>Leonardo Kepler</h1>
-  <img alt="Minha foto" width="260" height="260" src="https://avatars.githubusercontent.com/u/39733399?v=4">
-  <ul>
-    <li><svg viewBox="0 0 16 16" version="1.1" width="16" height="16"
-        aria-hidden="true">
-        <path fill-rule="evenodd"
-          d="M11.536 3.464a5 5 0 010 7.072L8 14.07l-3.536-3.535a5 5 0 117.072-7.072v.001zm1.06 8.132a6.5 6.5 0 10-9.192 0l3.535 3.536a1.5 1.5 0 002.122 0l3.535-3.536zM8 9a2 2 0 100-4 2 2 0 000 4z">
-        </path>
-      </svg>
-      <span>Rio Grande do Sul, Brasil.</span>
-    </li>
-    <li>
-      <svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
-        <path fill-rule="evenodd"
-          d="M1.75 2A1.75 1.75 0 000 3.75v.736a.75.75 0 000 .027v7.737C0 13.216.784 14 1.75 14h12.5A1.75 1.75 0 0016 12.25v-8.5A1.75 1.75 0 0014.25 2H1.75zM14.5 4.07v-.32a.25.25 0 00-.25-.25H1.75a.25.25 0 00-.25.25v.32L8 7.88l6.5-3.81zm-13 1.74v6.441c0 .138.112.25.25.25h12.5a.25.25 0 00.25-.25V5.809L8.38 9.397a.75.75 0 01-.76 0L1.5 5.809z">
-        </path>
-      </svg>
-      <a href="mailto:leokepler@gmail.com">leokepler@gmail.com</a>
-    </li>
-  </ul>
-  <h4>Estudante de Desenvolvimento Web na Trybe</h4>
-  
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.png" />
 
-  
-</body>
+    <title>Leonardo Kepler | Estudante de Desenvolvimento Web na Trybe</title>
+  </head>
 
+  <body>
+    <header>
+      <nav>
+        <h1>Leonardo Kepler</h1>
+        <ul>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+      </nav>
+    </header>
+    <section class="hero" id="about">
+      <img
+        src="https://avatars.githubusercontent.com/u/39733399?v=4"
+        alt="leonardo-kepler"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">Sobre mim</h2>
+        <p class="bio-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+          dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+          inventore tempore minus nemo, iste ullam illo laboriosam maiores
+          repudiandae quos!
+        </p>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="https://eager-williams-af0d00.netlify.app/assets/icons/icons8-html-5.svg"
+            alt="HTML5"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="https://eager-williams-af0d00.netlify.app/assets/icons/icons8-css3.svg"
+            alt="CSS3"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="https://eager-williams-af0d00.netlify.app/assets/icons/icons8-git.svg"
+            alt="Git"
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Projetos</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/netflixClone.png"
+            alt="netflix-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Netflix Clone</h3>
+          <p class="project-details">
+            Um clone da Netflix, desenvolvido em ReactJS.
+          </p>
+          <a
+            href="https://www.cloneflix.cf/"
+            target="_blank"
+            class="project-link"
+            >Confira</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contato">
+      <div class="socials">
+        <a href="https://twitter.com/keplerleo" target="_blank"
+          ><img
+            src="https://eager-williams-af0d00.netlify.app/assets/icons/icons8-twitter-circled.gif"
+            alt="Twitter"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="https://www.instagram.com/keplerleo/" target="_blank"
+          ><img
+            src="https://eager-williams-af0d00.netlify.app/assets/icons/icons8-instagram.gif"
+            alt="Instagram"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="https://www.linkedin.com/in/keplerleo/" target="_blank"
+          ><img
+            src="https://eager-williams-af0d00.netlify.app/assets/icons/icons8-linkedin-circled.gif"
+            alt="Linkedin"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="https://github.com/keplerleo" target="_blank"
+          ><img
+            src="https://eager-williams-af0d00.netlify.app/assets/icons/icons8-github.gif"
+            alt="Github"
+            class="socicon"
+        /></a>
+      </div>
+    </section>
+    <footer>
+      <p class="copy">&copy; Copyright 2022</p>
+      <p class="copy">
+        Desenvolvido com &#x2661; por
+        <a href="https://github.com/keplerleo" target="_blank"
+          >Leonardo Kepler</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
