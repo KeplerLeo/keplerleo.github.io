@@ -111,6 +111,7 @@ nav ul li {
   padding: 0.625rem;
   border-radius: 11px;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  text-align: center;
 }
 
 .bio h1 {
