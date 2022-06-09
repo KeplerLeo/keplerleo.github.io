@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
 /* Variáveis */
 :root {
   --font-family: "Roboto", sans-serf;
@@ -12,7 +13,7 @@
   --secondary-shadow: #002f493b;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
-  --line-height: 1.7rem ;
+  --line-height: 1.3rem;
   --transition: 0.3s;
 }
 
@@ -65,6 +66,7 @@ nav a {
   color: var(--primary-color);
   transition: var(--transition);
 }
+
 nav a:hover {
   color: var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
@@ -98,16 +100,16 @@ nav ul li {
 }
 
 .hero img {
-  height: 12rem;
-  width: 12rem;
-  border-radius: 6px;
+  height: 11.5rem;
+  width: 11.5rem;
+  border-radius: 11px;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
 .bio {
   width: 25rem;
   padding: 0.625rem;
-  border-radius: 6px;
+  border-radius: 11px;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
@@ -117,6 +119,7 @@ nav ul li {
 
 .bio p {
   line-height: var(--line-height);
+  font-size: 0.9rem;
   padding: 0.3rem 0;
 }
 
@@ -157,6 +160,7 @@ nav ul li {
 .project-pic {
   width: 100%;
   height: 95%;
+  border-radius: 11px;
 }
 
 .projects-container {
@@ -167,13 +171,18 @@ nav ul li {
 
 .projects-title {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .project-container {
   text-align: center;
   width: 21.875rem;
-  padding: 1rem;
+  padding: 1.2rem;
+}
+
+.project-link {
+  font-weight: var(--bold-font);
+  transition: var(--transition);
 }
 
 .socials {
