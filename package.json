@@ -1,0 +1,37 @@
+{
+  "name": "keplerleo.github.io",
+  "version": "1.0.0",
+  "description": "Leonardo's portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier -write .",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KeplerLeo/keplerleo.github.io.git"
+  },
+  "keywords": [],
+  "author": "Leonardo Kepler Mesquita<leokepler@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KeplerLeo/keplerleo.github.io/issues"
+  },
+  "homepage": "https://github.com/KeplerLeo/keplerleo.github.io#readme",
+  "dependencies": {
+    "@chakra-ui/react": "^2.4.6",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "next": "^13.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-next": "^13.1.1",
+    "prettier": "^2.8.1"
+  }
+}
