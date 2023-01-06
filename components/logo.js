@@ -1,7 +1,7 @@
 import { Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
-import Image from 'next/image'
 import Link from 'next/link'
+import FootprintIcon from './icons/footprint'
 
 const LogoBox = styled.span`
   font-weight: bols;
@@ -12,25 +12,29 @@ const LogoBox = styled.span`
   line-height: 20px;
   padding: 10px;
 
-  &:hover img {
+  > svg {
+    transition: 200ms ease;
+  }
+
+  &:hover > svg {
     transform: rotate(20deg);
   }
 `
 
 const Logo = () => {
-  const logoImg = `/images/logo${useColorModeValue('', '-dark')}.png`
   return (
-    <Link href="/">
+    <Link legacyBehavior href="/">
       <a>
         <LogoBox>
-          <Image src={logoImg} width={20} height={20} alt="logo"/>
+          <FootprintIcon />
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily='M PLUS Rounded 1c'
-            fontWeight='bold'
-            ml={3}>
-              Leonardo Kepler
-            </Text>
+            fontFamily="M PLUS Rounded 1c"
+            fontWeight="bold"
+            ml={3}
+          >
+            Leonardo Kepler
+          </Text>
         </LogoBox>
       </a>
     </Link>
